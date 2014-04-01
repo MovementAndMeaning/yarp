@@ -395,6 +395,12 @@ void CommandsHelper::handleControlModeMsg(const yarp::os::Bottle& cmd,
                             *ok = iMode->setPositionMode(axis);
                         break;
 
+                    case VOCAB_CM_POSITION_DIRECT:
+                        if(iMode2)
+                            *ok = iMode2->setControlMode(axis, VOCAB_CM_POSITION_DIRECT);
+                        break;
+
+
                     case VOCAB_CM_VELOCITY:
                         if(iMode2)
                             *ok = iMode2->setControlMode(axis, VOCAB_CM_VELOCITY);
@@ -1106,11 +1112,6 @@ void ImplementCallbackHelper::onRead(CommandMessage& v)
             }
         case VOCAB_POSITION_MOVES:
             {
-                //printf("Received a position command\n");
-                //for (int i = 0; i < v.body.size(); i++)
-                //    printf("%.2f ", v.body[i]);
-                //printf("\n");
-
                 if (pos)
                     {
                         bool ok = pos->positionMove(cmdVector.data());
@@ -1128,10 +1129,6 @@ void ImplementCallbackHelper::onRead(CommandMessage& v)
             }
         case VOCAB_VELOCITY_MOVES:
             {
-                //            printf("Received a velocity command\n");
-                //            for (i = 0; i < v.body.size(); i++)
-                //                printf("%.2f ", v.body[i]);
-                //            printf("\n");
                 if (vel)
                     {
                         bool ok = vel->velocityMove(cmdVector.data());

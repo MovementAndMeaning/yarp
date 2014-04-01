@@ -2208,6 +2208,9 @@ public:
     bool setPositionMode(int j)
     { return send3V1I(VOCAB_SET, VOCAB_ICONTROLMODE, VOCAB_CM_POSITION, j); }
 
+    bool setPositionDirectMode(int j)
+    { return send3V1I(VOCAB_SET, VOCAB_ICONTROLMODE, VOCAB_CM_POSITION_DIRECT, j); }
+
     bool setVelocityMode(int j)
     { return send3V1I(VOCAB_SET, VOCAB_ICONTROLMODE, VOCAB_CM_VELOCITY, j); }
 
@@ -2344,7 +2347,14 @@ public:
         command_buffer.write(writeStrict);
 
         return true;
+    }
 
+    bool setPositionDirectMode()
+    {
+        int *modes = new int[nj];
+        for(int i=0; i<nj; i++) modes[i] = VOCAB_CM_POSITION_DIRECT;
+
+        setControlModes(modes);
     }
 
     bool setPosition(int j, double ref)
