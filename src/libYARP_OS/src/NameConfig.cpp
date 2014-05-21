@@ -39,6 +39,9 @@
 using namespace yarp::os::impl;
 using namespace yarp::os;
 
+bool NameConfig::manualConfig;
+String NameConfig::manualIP;
+int NameConfig::manualPort;
 #define CONF_FILENAME YARP_CONFIG_FILENAME
 
 bool NameConfig::fromString(const String& txt) {
@@ -179,14 +182,22 @@ String NameConfig::readConfig(const String& fileName) {
 
 
 bool NameConfig::fromFile(const char *ns) {
-    String fname = getConfigFileName(NULL,ns);
-    if (fname!="") {
-        String txt = readConfig(fname);
-        if (txt!="") {
-            return fromString(txt);
-        }
-    }
+	if (manualConfig) {
+		char portStr[32];
+		itoa(manualPort, portStr, 10);
+		String txt = manualIP+" "+ String(portStr)+" yarp\n";
+		return fromString(txt);
+	}
+	else {
+    	String fname = getConfigFileName(NULL,ns);
+    	if (fname!="") {
+        	String txt = readConfig(fname);
+        	if (txt!="") {
+            	return fromString(txt);
+        	}
+    	}
     return false;
+	}
 }
 
 
