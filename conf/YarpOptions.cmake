@@ -27,6 +27,13 @@ set(YARP_OPTIMIZED_CONFIGURATIONS "Release" "MinSizeRel")
 set(YARP_DEBUG_CONFIGURATIONS "Debug" "RelWithDebInfo")
 
 #########################################################################
+# M+M settings
+if(APPLE)
+	set(CMAKE_OSX_ARCHITECTURES "i386;x86_64" CACHE STRING "Build architectures for Mac OS X" FORCE)
+	set(CMAKE_CXX_FLAGS "-stdlib=libstdc++" CACHE STRING "Fixes linking error for M+M/ACE" FORCE)
+endif(APPLE)
+
+#########################################################################
 # DebugFull builds options
 
 if(CMAKE_COMPILER_IS_GNUCXX)
@@ -129,7 +136,6 @@ endif()
 #message(STATUS "DEPRECATED_DECLARATIONS_FLAGS = ${DEPRECATED_DECLARATIONS_FLAGS}")
 #message(STATUS "HARDENING_FLAGS = ${HARDENING_FLAGS}")
 #message(STATUS "CXX11_FLAGS = ${CXX11_FLAGS}")
-
 
 #########################################################################
 # Enable/disable wanted, experimental, and unwanted warnings
@@ -309,5 +315,5 @@ endif()
 if(TEST_MACHINE_HOSTNAME)
   message(STATUS "TEST_MACHINE_HOSTNAME: ${TEST_MACHINE_HOSTNAME}")
   message(STATUS "TEST_MACHINE_OS_TYPE: ${TEST_MACHINE_OS_TYPE}")
-  message(STATUS "TEST_MACHINE_TEST_TYPE: ${TEST_MACHINE_TEST_TYPE}")
+  message(	 "TEST_MACHINE_TEST_TYPE: ${TEST_MACHINE_TEST_TYPE}")
 endif()
