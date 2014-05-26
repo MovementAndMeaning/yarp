@@ -466,4 +466,10 @@ Bottle NameConfig::getNamespaces(bool refresh) {
     getNamespace(refresh);
     return spaces;
 }
+        
+void NameConfig::setManualConfig(String ip, int port) {
+    manualIP = ip;
+    manualPort = port;
+    manualConfig = true;
+}
 
