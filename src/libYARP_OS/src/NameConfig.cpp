@@ -184,7 +184,7 @@ String NameConfig::readConfig(const String& fileName) {
 bool NameConfig::fromFile(const char *ns) {
 	if (manualConfig) {
 		char portStr[32];
-		itoa(manualPort, portStr, 10);
+        ACE_OS::itoa(manualPort, portStr, 10);
 		String txt = manualIP+" "+ String(portStr)+" yarp\n";
 		return fromString(txt);
 	}
