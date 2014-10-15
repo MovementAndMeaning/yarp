@@ -133,8 +133,6 @@ set(YARP_OS_IMPL_HDRS include/yarp/os/impl/ACESemaphoreImpl.h
                       include/yarp/os/impl/FakeTwoWayStream.h
                       include/yarp/os/impl/FallbackNameClient.h
                       include/yarp/os/impl/FallbackNameServer.h
-                      include/yarp/os/impl/hmac/hmac_sha2.h
-                      include/yarp/os/impl/hmac/sha2.h
                       include/yarp/os/impl/HttpCarrier.h
                       include/yarp/os/impl/IOException.h
                       include/yarp/os/impl/LocalCarrier.h
@@ -191,6 +189,9 @@ set(YARP_OS_IMPL_HDRS include/yarp/os/impl/ACESemaphoreImpl.h
                       include/yarp/os/impl/UdpCarrier.h
                       include/yarp/os/impl/UnitTest.h
                       include/yarp/os/impl/ydr.h)
+
+set(YARP_OS_IMPL_HMAC_HDRS include/yarp/os/impl/hmac/hmac_sha2.h
+                      include/yarp/os/impl/hmac/sha2.h)
 
 set(YARP_OS_SRCS src/AbstractCarrier.cpp
                  src/AuthHMAC.cpp
@@ -327,6 +328,7 @@ source_group("Source Files" FILES ${YARP_OS_SRCS})
 source_group("Header Files" FILES ${YARP_OS_HDRS})
 source_group("IDL Header Files" FILES ${YARP_OS_IDL_HDRS})
 source_group("Implementation Header Files" FILES ${YARP_OS_IMPL_HDRS})
+source_group("HMAC Implementation Header Files" FILES ${YARP_OS_IMPL_HMAC_HDRS})
 
 option(USE_PORT_AUTHENTICATION "Use a 3-way passphrase authentication for connections to ports" FALSE)
 mark_as_advanced(USE_PORT_AUTHENTICATION)
@@ -348,7 +350,7 @@ if (NOT SKIP_ACE)
   include_directories(${ACE_INCLUDE_DIRS})
 endif ()
 
-add_library(YARP_OS ${YARP_OS_SRCS} ${YARP_OS_HDRS} ${YARP_OS_IDL_HDRS} ${YARP_OS_IMPL_HDRS})
+add_library(YARP_OS ${YARP_OS_SRCS} ${YARP_OS_HDRS} ${YARP_OS_IDL_HDRS} ${YARP_OS_IMPL_HDRS} ${YARP_OS_IMPL_HMAC_HDRS})
 target_link_libraries(YARP_OS LINK_PRIVATE ${ACE_LIBRARIES})
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
@@ -374,3 +376,6 @@ install(FILES ${YARP_OS_IDL_HDRS}
 install(FILES ${YARP_OS_IMPL_HDRS}
         COMPONENT development
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/yarp/os/impl)
+install(FILES ${YARP_OS_IMPL_HMAC_HDRS}
+        COMPONENT development
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/yarp/os/impl/hmac)
