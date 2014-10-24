@@ -10,6 +10,7 @@ set(ATLAS_POSSIBLE_INCLUDE_PATHS
     /usr/include
     /usr/include/atlas
     /usr/local/include
+    /opt/local/include
     $ENV{ATLAS_DIR}
     $ENV{ATLAS_DIR}/include
 )
@@ -26,6 +27,7 @@ set(ATLAS_POSSIBLE_LIBRARY_PATHS
     /usr/local/lib/sse
     /usr/lib
     /usr/local/lib
+    /opt/local/lib
     $ENV{ATLAS_DIR}
     $ENV{ATLAS_DIR}/lib
 )
