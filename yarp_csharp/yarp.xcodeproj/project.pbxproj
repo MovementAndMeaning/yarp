@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF55EC341A3651D70096DF54 /* libACE.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC331A3651D70096DF54 /* libACE.dylib */; };
+		DF55EC381A36527F0096DF54 /* yarpCSHARP_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = DF55EC371A36527F0096DF54 /* yarpCSHARP_wrap.cxx */; };
+		DF55EC3A1A3667C40096DF54 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC391A3667C40096DF54 /* Carbon.framework */; };
+		DF55EC401A3669690096DF54 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC3F1A3669690096DF54 /* libc++.dylib */; };
+		DF55EC461A3740A40096DF54 /* libYARP_dev.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC411A3740A40096DF54 /* libYARP_dev.1.dylib */; };
+		DF55EC471A3740A40096DF54 /* libYARP_init.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC421A3740A40096DF54 /* libYARP_init.1.dylib */; };
+		DF55EC481A3740A40096DF54 /* libYARP_name.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC431A3740A40096DF54 /* libYARP_name.1.dylib */; };
+		DF55EC491A3740A40096DF54 /* libYARP_OS.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC441A3740A40096DF54 /* libYARP_OS.1.dylib */; };
+		DF55EC4A1A3740A40096DF54 /* libYARP_sig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF55EC451A3740A40096DF54 /* libYARP_sig.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF55EC1C1A36506C0096DF54 /* yarp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yarp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF55EC201A36506C0096DF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = yarp/Info.plist; sourceTree = SOURCE_ROOT; };
+		DF55EC331A3651D70096DF54 /* libACE.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libACE.dylib; path = "/opt/M+M/lib/libACE.dylib"; sourceTree = "<absolute>"; };
+		DF55EC361A36527F0096DF54 /* yarpCSHARP_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yarpCSHARP_wrap.h; path = ../bindings/build/yarpCSHARP_wrap.h; sourceTree = SOURCE_ROOT; };
+		DF55EC371A36527F0096DF54 /* yarpCSHARP_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = yarpCSHARP_wrap.cxx; path = ../bindings/build/yarpCSHARP_wrap.cxx; sourceTree = SOURCE_ROOT; };
+		DF55EC391A3667C40096DF54 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		DF55EC3F1A3669690096DF54 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		DF55EC411A3740A40096DF54 /* libYARP_dev.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libYARP_dev.1.dylib; path = "/opt/M+M/lib/libYARP_dev.1.dylib"; sourceTree = "<absolute>"; };
+		DF55EC421A3740A40096DF54 /* libYARP_init.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libYARP_init.1.dylib; path = "/opt/M+M/lib/libYARP_init.1.dylib"; sourceTree = "<absolute>"; };
+		DF55EC431A3740A40096DF54 /* libYARP_name.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libYARP_name.1.dylib; path = "/opt/M+M/lib/libYARP_name.1.dylib"; sourceTree = "<absolute>"; };
+		DF55EC441A3740A40096DF54 /* libYARP_OS.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libYARP_OS.1.dylib; path = "/opt/M+M/lib/libYARP_OS.1.dylib"; sourceTree = "<absolute>"; };
+		DF55EC451A3740A40096DF54 /* libYARP_sig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libYARP_sig.1.dylib; path = "/opt/M+M/lib/libYARP_sig.1.dylib"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF55EC191A36506C0096DF54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF55EC401A3669690096DF54 /* libc++.dylib in Frameworks */,
+				DF55EC341A3651D70096DF54 /* libACE.dylib in Frameworks */,
+				DF55EC461A3740A40096DF54 /* libYARP_dev.1.dylib in Frameworks */,
+				DF55EC471A3740A40096DF54 /* libYARP_init.1.dylib in Frameworks */,
+				DF55EC481A3740A40096DF54 /* libYARP_name.1.dylib in Frameworks */,
+				DF55EC491A3740A40096DF54 /* libYARP_OS.1.dylib in Frameworks */,
+				DF55EC4A1A3740A40096DF54 /* libYARP_sig.1.dylib in Frameworks */,
+				DF55EC3A1A3667C40096DF54 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF55EC131A36506C0096DF54 = {
+			isa = PBXGroup;
+			children = (
+				DF55EC351A3651E00096DF54 /* Libraries and Frameworks */,
+				DF55EC1E1A36506C0096DF54 /* yarp */,
+				DF55EC1D1A36506C0096DF54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF55EC1D1A36506C0096DF54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF55EC1C1A36506C0096DF54 /* yarp.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF55EC1E1A36506C0096DF54 /* yarp */ = {
+			isa = PBXGroup;
+			children = (
+				DF55EC361A36527F0096DF54 /* yarpCSHARP_wrap.h */,
+				DF55EC371A36527F0096DF54 /* yarpCSHARP_wrap.cxx */,
+				DF55EC1F1A36506C0096DF54 /* Supporting Files */,
+			);
+			path = yarp;
+			sourceTree = "<group>";
+		};
+		DF55EC1F1A36506C0096DF54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF55EC201A36506C0096DF54 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF55EC351A3651E00096DF54 /* Libraries and Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF55EC331A3651D70096DF54 /* libACE.dylib */,
+				DF55EC411A3740A40096DF54 /* libYARP_dev.1.dylib */,
+				DF55EC421A3740A40096DF54 /* libYARP_init.1.dylib */,
+				DF55EC431A3740A40096DF54 /* libYARP_name.1.dylib */,
+				DF55EC441A3740A40096DF54 /* libYARP_OS.1.dylib */,
+				DF55EC451A3740A40096DF54 /* libYARP_sig.1.dylib */,
+				DF55EC3F1A3669690096DF54 /* libc++.dylib */,
+				DF55EC391A3667C40096DF54 /* Carbon.framework */,
+			);
+			name = "Libraries and Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF55EC1B1A36506C0096DF54 /* yarp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF55EC231A36506C0096DF54 /* Build configuration list for PBXNativeTarget "yarp" */;
+			buildPhases = (
+				DF55EC181A36506C0096DF54 /* Sources */,
+				DF55EC191A36506C0096DF54 /* Frameworks */,
+				DF55EC1A1A36506C0096DF54 /* Resources */,
+				DF55EC4B1A37418F0096DF54 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yarp;
+			productName = yarp;
+			productReference = DF55EC1C1A36506C0096DF54 /* yarp.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF55EC141A36506C0096DF54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Movement Meaning";
+				TargetAttributes = {
+					DF55EC1B1A36506C0096DF54 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DF55EC171A36506C0096DF54 /* Build configuration list for PBXProject "yarp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF55EC131A36506C0096DF54;
+			productRefGroup = DF55EC1D1A36506C0096DF54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF55EC1B1A36506C0096DF54 /* yarp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF55EC1A1A36506C0096DF54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF55EC4B1A37418F0096DF54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change libACE.dylib \"@rpath/libACE.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change libYARP_OS.1.dylib \"@rpath/libYARP_OS.1.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change libYARP_init.1.dylib \"@rpath/libYARP_init.1.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change libYARP_sig.1.dylib \"@rpath/libYARP_sig.1.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change libYARP_dev.1.dylib \"@rpath/libYARP_dev.1.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change libYARP_name.1.dylib \"@rpath/libYARP_name.1.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF55EC181A36506C0096DF54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF55EC381A36527F0096DF54 /* yarpCSHARP_wrap.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF55EC211A36506C0096DF54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/opt/M+M/include",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF55EC221A36506C0096DF54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/opt/M+M/include",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DF55EC241A36506C0096DF54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COPY_PHASE_STRIP = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				INFOPLIST_FILE = "yarp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "/opt/M+M/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/opt/M+M/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = "";
+			};
+			name = Debug;
+		};
+		DF55EC251A36506C0096DF54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				INFOPLIST_FILE = "yarp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "/opt/M+M/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/opt/M+M/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF55EC171A36506C0096DF54 /* Build configuration list for PBXProject "yarp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF55EC211A36506C0096DF54 /* Debug */,
+				DF55EC221A36506C0096DF54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF55EC231A36506C0096DF54 /* Build configuration list for PBXNativeTarget "yarp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF55EC241A36506C0096DF54 /* Debug */,
+				DF55EC251A36506C0096DF54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF55EC141A36506C0096DF54 /* Project object */;
+}

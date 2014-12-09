@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>58F5E0E2-3724-4864-8B13-3A6F8B41B576</string>
+	<key>IDESourceControlProjectName</key>
+	<string>yarp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>77FC83EEBABC943C45158C4DFBD14EC8EB4219A4</key>
+		<string>http://github.com/MovementAndMeaning/yarp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>yarp_csharp/yarp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>77FC83EEBABC943C45158C4DFBD14EC8EB4219A4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://github.com/MovementAndMeaning/yarp</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>77FC83EEBABC943C45158C4DFBD14EC8EB4219A4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>77FC83EEBABC943C45158C4DFBD14EC8EB4219A4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>yarp2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
