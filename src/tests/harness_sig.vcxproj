@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{F013A25A-BB5A-41DF-B027-6694EBCF14B5}</ProjectGUID>
+    <ProjectGUID>{5DF68B72-6250-4DA2-8DBB-F552C77A89FE}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>harness_sig</ProjectName>
@@ -29,25 +29,25 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -57,25 +57,25 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\dev\yarp_MPlusM\bin\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\devel\yarp_MPlusM\bin\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">harness_sig.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">harness_sig</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\dev\yarp_MPlusM\bin\RELEASE\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\devel\yarp_MPlusM\bin\RELEASE\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">harness_sig.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">harness_sig</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\dev\yarp_MPlusM\bin\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\devel\yarp_MPlusM\bin\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">harness_sig.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">harness_sig</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\dev\yarp_MPlusM\bin\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\devel\yarp_MPlusM\bin\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">harness_sig.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">harness_sig</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
@@ -84,7 +84,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -101,10 +101,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;YARP_USE_PERSISTENT_NAMESERVER=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,11 +113,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\YARP_OSd.lib;..\..\lib\Debug\YARP_sigd.lib;..\..\lib\Debug\YARP_devd.lib;..\..\lib\Debug\YARP_named.lib;..\..\lib\Debug\YARP_initd.lib;D:\dev\ACE_wrappers\lib\ACEd.lib;winmm.lib;..\..\lib\Debug\YARP_serversqld.lib;..\..\lib\Debug\YARP_sigd.lib;..\..\lib\Debug\YARP_named.lib;..\..\lib\Debug\YARP_initd.lib;..\..\lib\Debug\YARP_OSd.lib;..\..\lib\Debug\YARP_priv_sqlited.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/dev/yarp_MPlusM/lib;D:/dev/yarp_MPlusM/lib/$(Configuration);;D:/dev/yarp_MPlusM/lib/Debug;D:/dev/yarp_MPlusM/lib/Debug/$(Configuration);;D:/dev/yarp_MPlusM/lib/Release;D:/dev/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\YARP_OSd.lib;..\..\lib\Debug\YARP_sigd.lib;..\..\lib\Debug\YARP_devd.lib;..\..\lib\Debug\YARP_named.lib;..\..\lib\Debug\YARP_initd.lib;D:\devel\ACE_wrappers2\lib\ACEd.lib;winmm.lib;..\..\lib\Debug\YARP_serversqld.lib;..\..\lib\Debug\YARP_sigd.lib;..\..\lib\Debug\YARP_named.lib;..\..\lib\Debug\YARP_initd.lib;..\..\lib\Debug\YARP_OSd.lib;..\..\lib\Debug\YARP_priv_sqlited.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/devel/yarp_MPlusM/lib;D:/devel/yarp_MPlusM/lib/$(Configuration);;D:/devel/yarp_MPlusM/lib/Debug;D:/devel/yarp_MPlusM/lib/Debug/$(Configuration);;D:/devel/yarp_MPlusM/lib/Release;D:/devel/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>D:/dev/yarp_MPlusM/bin/Debug/harness_sig.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/dev/yarp_MPlusM/bin/Debug/harness_sig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/devel/yarp_MPlusM/bin/Debug/harness_sig.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/devel/yarp_MPlusM/bin/Debug/harness_sig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -127,7 +127,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -143,10 +143,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;YARP_USE_PERSISTENT_NAMESERVER=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -155,11 +155,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\YARP_OS.lib;..\..\lib\Release\YARP_sig.lib;..\..\lib\Release\YARP_dev.lib;..\..\lib\Release\YARP_name.lib;..\..\lib\Release\YARP_init.lib;D:\dev\ACE_wrappers\lib\ACE.lib;winmm.lib;..\..\lib\Release\YARP_serversql.lib;..\..\lib\Release\YARP_sig.lib;..\..\lib\Release\YARP_name.lib;..\..\lib\Release\YARP_init.lib;..\..\lib\Release\YARP_OS.lib;..\..\lib\Release\YARP_priv_sqlite.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/dev/yarp_MPlusM/lib;D:/dev/yarp_MPlusM/lib/$(Configuration);;D:/dev/yarp_MPlusM/lib/Debug;D:/dev/yarp_MPlusM/lib/Debug/$(Configuration);;D:/dev/yarp_MPlusM/lib/Release;D:/dev/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\YARP_OS.lib;..\..\lib\Release\YARP_sig.lib;..\..\lib\Release\YARP_dev.lib;..\..\lib\Release\YARP_name.lib;..\..\lib\Release\YARP_init.lib;D:\devel\ACE_wrappers2\lib\ACE.lib;winmm.lib;..\..\lib\Release\YARP_serversql.lib;..\..\lib\Release\YARP_sig.lib;..\..\lib\Release\YARP_name.lib;..\..\lib\Release\YARP_init.lib;..\..\lib\Release\YARP_OS.lib;..\..\lib\Release\YARP_priv_sqlite.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/devel/yarp_MPlusM/lib;D:/devel/yarp_MPlusM/lib/$(Configuration);;D:/devel/yarp_MPlusM/lib/Debug;D:/devel/yarp_MPlusM/lib/Debug/$(Configuration);;D:/devel/yarp_MPlusM/lib/Release;D:/devel/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>D:/dev/yarp_MPlusM/bin/RELEASE/harness_sig.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/dev/yarp_MPlusM/bin/RELEASE/harness_sig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/devel/yarp_MPlusM/bin/RELEASE/harness_sig.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/devel/yarp_MPlusM/bin/RELEASE/harness_sig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -169,7 +169,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -185,10 +185,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;YARP_USE_PERSISTENT_NAMESERVER=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -197,11 +197,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\YARP_OS.lib;..\..\lib\MinSizeRel\YARP_sig.lib;..\..\lib\MinSizeRel\YARP_dev.lib;..\..\lib\MinSizeRel\YARP_name.lib;..\..\lib\MinSizeRel\YARP_init.lib;D:\dev\ACE_wrappers\lib\ACE.lib;winmm.lib;..\..\lib\MinSizeRel\YARP_serversql.lib;..\..\lib\MinSizeRel\YARP_sig.lib;..\..\lib\MinSizeRel\YARP_name.lib;..\..\lib\MinSizeRel\YARP_init.lib;..\..\lib\MinSizeRel\YARP_OS.lib;..\..\lib\MinSizeRel\YARP_priv_sqlite.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/dev/yarp_MPlusM/lib;D:/dev/yarp_MPlusM/lib/$(Configuration);;D:/dev/yarp_MPlusM/lib/Debug;D:/dev/yarp_MPlusM/lib/Debug/$(Configuration);;D:/dev/yarp_MPlusM/lib/Release;D:/dev/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\YARP_OS.lib;..\..\lib\MinSizeRel\YARP_sig.lib;..\..\lib\MinSizeRel\YARP_dev.lib;..\..\lib\MinSizeRel\YARP_name.lib;..\..\lib\MinSizeRel\YARP_init.lib;D:\devel\ACE_wrappers2\lib\ACE.lib;winmm.lib;..\..\lib\MinSizeRel\YARP_serversql.lib;..\..\lib\MinSizeRel\YARP_sig.lib;..\..\lib\MinSizeRel\YARP_name.lib;..\..\lib\MinSizeRel\YARP_init.lib;..\..\lib\MinSizeRel\YARP_OS.lib;..\..\lib\MinSizeRel\YARP_priv_sqlite.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/devel/yarp_MPlusM/lib;D:/devel/yarp_MPlusM/lib/$(Configuration);;D:/devel/yarp_MPlusM/lib/Debug;D:/devel/yarp_MPlusM/lib/Debug/$(Configuration);;D:/devel/yarp_MPlusM/lib/Release;D:/devel/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>D:/dev/yarp_MPlusM/bin/MinSizeRel/harness_sig.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/dev/yarp_MPlusM/bin/MinSizeRel/harness_sig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/devel/yarp_MPlusM/bin/MinSizeRel/harness_sig.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/devel/yarp_MPlusM/bin/MinSizeRel/harness_sig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -211,7 +211,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -227,10 +227,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;YARP_USE_PERSISTENT_NAMESERVER=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>d:/dev/yarp_MPlusM/src/yarpserver/include;D:/dev/yarp_MPlusM/generated_include;D:/dev/yarp_MPlusM/src/libYARP_OS/include;D:/dev/ACE_wrappers;D:/dev/yarp_MPlusM/src/libYARP_sig/include;D:/dev/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/devel/yarp_MPlusM/src/yarpserver/include;D:/devel/yarp_MPlusM/generated_include;D:/devel/yarp_MPlusM/src/libYARP_OS/include;D:/devel/ACE_wrappers2;D:/devel/yarp_MPlusM/src/libYARP_sig/include;D:/devel/yarp_MPlusM/src/libYARP_dev/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -239,11 +239,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\YARP_OS.lib;..\..\lib\RelWithDebInfo\YARP_sig.lib;..\..\lib\RelWithDebInfo\YARP_dev.lib;..\..\lib\RelWithDebInfo\YARP_name.lib;..\..\lib\RelWithDebInfo\YARP_init.lib;D:\dev\ACE_wrappers\lib\ACEd.lib;winmm.lib;..\..\lib\RelWithDebInfo\YARP_serversql.lib;..\..\lib\RelWithDebInfo\YARP_sig.lib;..\..\lib\RelWithDebInfo\YARP_name.lib;..\..\lib\RelWithDebInfo\YARP_init.lib;..\..\lib\RelWithDebInfo\YARP_OS.lib;..\..\lib\RelWithDebInfo\YARP_priv_sqlite.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/dev/yarp_MPlusM/lib;D:/dev/yarp_MPlusM/lib/$(Configuration);;D:/dev/yarp_MPlusM/lib/Debug;D:/dev/yarp_MPlusM/lib/Debug/$(Configuration);;D:/dev/yarp_MPlusM/lib/Release;D:/dev/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\YARP_OS.lib;..\..\lib\RelWithDebInfo\YARP_sig.lib;..\..\lib\RelWithDebInfo\YARP_dev.lib;..\..\lib\RelWithDebInfo\YARP_name.lib;..\..\lib\RelWithDebInfo\YARP_init.lib;D:\devel\ACE_wrappers2\lib\ACEd.lib;winmm.lib;..\..\lib\RelWithDebInfo\YARP_serversql.lib;..\..\lib\RelWithDebInfo\YARP_sig.lib;..\..\lib\RelWithDebInfo\YARP_name.lib;..\..\lib\RelWithDebInfo\YARP_init.lib;..\..\lib\RelWithDebInfo\YARP_OS.lib;..\..\lib\RelWithDebInfo\YARP_priv_sqlite.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/devel/yarp_MPlusM/lib;D:/devel/yarp_MPlusM/lib/$(Configuration);;D:/devel/yarp_MPlusM/lib/Debug;D:/devel/yarp_MPlusM/lib/Debug/$(Configuration);;D:/devel/yarp_MPlusM/lib/Release;D:/devel/yarp_MPlusM/lib/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>D:/dev/yarp_MPlusM/bin/RelWithDebInfo/harness_sig.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/dev/yarp_MPlusM/bin/RelWithDebInfo/harness_sig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/devel/yarp_MPlusM/bin/RelWithDebInfo/harness_sig.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/devel/yarp_MPlusM/bin/RelWithDebInfo/harness_sig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -253,9 +253,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -Hd:/dev/yarp_MPlusM -BD:/dev/yarp_MPlusM --check-stamp-file D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/devel/yarp_MPlusM -BD:/devel/yarp_MPlusM --check-stamp-file D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -263,12 +263,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -Hd:/dev/yarp_MPlusM -BD:/dev/yarp_MPlusM --check-stamp-file D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/devel/yarp_MPlusM -BD:/devel/yarp_MPlusM --check-stamp-file D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -276,12 +276,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -Hd:/dev/yarp_MPlusM -BD:/dev/yarp_MPlusM --check-stamp-file D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/devel/yarp_MPlusM -BD:/devel/yarp_MPlusM --check-stamp-file D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -289,12 +289,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -Hd:/dev/yarp_MPlusM -BD:/dev/yarp_MPlusM --check-stamp-file D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/devel/yarp_MPlusM -BD:/devel/yarp_MPlusM --check-stamp-file D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -302,8 +302,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/dev/yarp_MPlusM/src/tests/CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;D:\dev\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\dev\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/devel/yarp_MPlusM/src/tests/CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;D:\devel\yarp_MPlusM\src\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\devel\yarp_MPlusM\src\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -316,29 +316,29 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\libYARP_sig\harness\VectorTest.cpp"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/src/libYARP_OS/YARP_OS.vcxproj">
-      <Project>32073890-F863-4684-AB76-CBB388898FD6</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/src/libYARP_OS/YARP_OS.vcxproj">
+      <Project>1CAE972A-AE49-4CBF-AF1E-F98991E68E9D</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/src/libYARP_dev/YARP_dev.vcxproj">
-      <Project>D50FDBDB-40A3-414B-8763-4FB52A265499</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/src/libYARP_dev/YARP_dev.vcxproj">
+      <Project>AAB33A68-7DE3-4C32-B3AE-3AA955F13070</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/src/libYARP_init/YARP_init.vcxproj">
-      <Project>819F5F58-13AD-49F3-ACAA-D788B1E2274A</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/src/libYARP_init/YARP_init.vcxproj">
+      <Project>1C6D8A39-11FD-4AD1-9CBD-C3405ED022E1</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/src/libYARP_name/YARP_name.vcxproj">
-      <Project>D262690F-E9D7-431B-A96B-E369D8837B60</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/src/libYARP_name/YARP_name.vcxproj">
+      <Project>6BE2FB7C-ADD2-4428-8E8C-297AA985191B</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/extern/sqlite/YARP_priv_sqlite.vcxproj">
-      <Project>FBAF3A56-3591-405F-BDD3-A8A65AB3F702</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/extern/sqlite/YARP_priv_sqlite.vcxproj">
+      <Project>0981426B-923F-4F05-BF64-9A7B14E7FB02</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/src/yarpserver/YARP_serversql.vcxproj">
-      <Project>C3148BCD-7616-4B53-A68C-D4097968AB42</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/src/yarpserver/YARP_serversql.vcxproj">
+      <Project>0AABFABF-13CB-4824-AD88-B9A9E287888C</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/src/libYARP_sig/YARP_sig.vcxproj">
-      <Project>88BFE805-F59A-43CA-ABF9-A08D3C7584B7</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/src/libYARP_sig/YARP_sig.vcxproj">
+      <Project>3E766B48-EF10-4876-A160-155EA19F4810</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/dev/yarp_MPlusM/ZERO_CHECK.vcxproj">
-      <Project>77610CF4-E7F8-42A8-9950-099F2EE87CD4</Project>
+    <ProjectReference Include="D:/devel/yarp_MPlusM/ZERO_CHECK.vcxproj">
+      <Project>8F3CFF96-4F59-447D-B40D-60A51675B688</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
