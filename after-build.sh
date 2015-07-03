@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIB_PATH=${1:-/opt/M+M}
+LIB_PATH=${1:-/opt/m+m}
 for ii in lib/*.1.dylib
 do
 	install_name_tool -change "`pwd`/lib/libYARP_OS.1.dylib" "@rpath/libYARP_OS.1.dylib" "$ii"

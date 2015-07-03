@@ -39,7 +39,7 @@ else()
                     $ENV{ACE_ROOT}/include
                     /usr/include
                     /usr/local/include
-                    /opt/M+M/include
+                    /opt/m+m/include
               DOC "directory containing ace/*.h for ACE library")
     mark_as_advanced(ACE_INCLUDE_DIR)
 
@@ -50,7 +50,7 @@ else()
                        $ENV{ACE_ROOT}
                        /usr/lib
                        /usr/local/lib
-                       /opt/M+M/lib
+                       /opt/m+m/lib
                  DOC "ACE library file")
 
     if(NOT DEFINED CMAKE_DEBUG_POSTFIX)
@@ -65,7 +65,7 @@ else()
                        $ENV{ACE_ROOT}
                        /usr/lib
                        /usr/local/lib
-                       /opt/M+M/lib
+                       /opt/m+m/lib
                  DOC "ACE library file (debug version)")
 
     if(DEFINED _CMAKE_DEBUG_POSTFIX_DEFINED)
