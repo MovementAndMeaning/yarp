@@ -57,3 +57,6 @@ src/yarpmanager/tests/INSTALL.vcxproj
 src/yarpmanager/tests/PACKAGE.vcxproj
 src/yarpmanager/libymanager/INSTALL.vcxproj
 src/yarpmanager/libymanager/PACKAGE.vcxproj
+CMakeCache.txt
+CMakeFiles/
+generated_include/
