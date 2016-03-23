@@ -29,8 +29,9 @@ set(YARP_DEBUG_CONFIGURATIONS "Debug" "RelWithDebInfo")
 #########################################################################
 # m+m settings
 if(APPLE)
-	set(CMAKE_OSX_ARCHITECTURES "i386;x86_64" CACHE STRING "Build architectures for Mac OS X" FORCE)
+	set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE STRING "Build architectures for Mac OS X" FORCE)
 	set(CMAKE_CXX_FLAGS "-stdlib=libstdc++" CACHE STRING "Fixes linking error for m+m/ACE" FORCE)
+        set(CMAKE_OSX_DEPLOYMENT_TARGET "10.7" CACHE STRING "Deployment target for Mac OS X" FORCE)
 endif(APPLE)
 
 #########################################################################
