@@ -4,6 +4,7 @@
 
 cmake_minimum_required(VERSION 2.8.7)
 cmake_policy(SET CMP0026 OLD)
+cmake_policy(SET CMP0042 OLD)
 
 project(YARP)
 
