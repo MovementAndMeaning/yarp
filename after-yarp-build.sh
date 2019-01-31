@@ -7,6 +7,7 @@ do
 	install_name_tool -change "`pwd`/lib/libYARP_init.1.dylib" "@rpath/libYARP_init.1.dylib" "$ii"
 	install_name_tool -change "`pwd`/lib/libYARP_name.1.dylib" "@rpath/libYARP_name.1.dylib" "$ii"
 	install_name_tool -change "`pwd`/lib/libYARP_sig.1.dylib" "@rpath/libYARP_sig.1.dylib" "$ii"
+	install_name_tool -change "`pwd`/lib/libYARP_dev.1.dylib" "@rpath/libYARP_dev.1.dylib" "$ii"
 	install_name_tool -change libACE.dylib "@rpath/libACE.dylib" "$ii"
 done
 for ii in bin/*
@@ -16,5 +17,6 @@ do
 	install_name_tool -change "`pwd`/lib/libYARP_init.1.dylib" "@rpath/libYARP_init.1.dylib" "$ii"
 	install_name_tool -change "`pwd`/lib/libYARP_name.1.dylib" "@rpath/libYARP_name.1.dylib" "$ii"
 	install_name_tool -change "`pwd`/lib/libYARP_sig.1.dylib" "@rpath/libYARP_sig.1.dylib" "$ii"
+	install_name_tool -change "`pwd`/lib/libYARP_dev.1.dylib" "@rpath/libYARP_dev.1.dylib" "$ii"
 	install_name_tool -change libACE.dylib "@rpath/libACE.dylib" "$ii"
 done

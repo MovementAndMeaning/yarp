@@ -34,8 +34,10 @@ include(YarpVersion)
 # See conf/YarpOptions.cmake.
 include(YarpOptions)
 
+
 # Check system configuration.
 # See conf/YarpSystemCheck.cmake.
+#set(CMAKE_REQUIRED_FLAGS "-std=libc++" CACHE STRING "compile flags?" FORCE)
 include(YarpSystemCheck)
 
 # Include some workarounds for older cmake versions

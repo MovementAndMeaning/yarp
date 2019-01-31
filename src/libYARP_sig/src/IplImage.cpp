@@ -225,7 +225,7 @@ IPLAPIIMPL(void, iplConvolve2D,(IplImage* srcImage, IplImage* dstImage,
                 }
         }
 	
-	switch (srcImage->depth)
+	switch (static_cast<unsigned>(srcImage->depth))
         {
         case IPL_DEPTH_8U:
             {
@@ -554,7 +554,7 @@ IPLAPIIMPL(void, iplConvolveSep2D,(IplImage* srcImage, IplImage* dstImage,
                 }
         }
 	
-	switch (srcImage->depth)
+	switch (static_cast<unsigned>(srcImage->depth))
         {
         case IPL_DEPTH_8U:
             {
@@ -684,7 +684,7 @@ IPLAPIIMPL(void, iplAllocateImage,(IplImage* image, int doFill, int fillValue))
 	if (doFill)
         {
             // this of course is only valid for depth == 8.
-            switch (image->depth)
+            switch (static_cast<unsigned>(image->depth))
                 {
                 case IPL_DEPTH_8U:
                 case IPL_DEPTH_8S:
@@ -792,7 +792,7 @@ IPLAPIIMPL(IplImage*, iplCreateImageHeader,
             int   width,      int   height, IplROI* roi, IplImage* maskROI,
             void* imageId,    IplTileInfo* tileInfo))
 {
-	switch (depth)
+	switch (static_cast<unsigned>(depth))
         {
         default:
         case IPL_DEPTH_1U:
@@ -861,7 +861,7 @@ IPLAPIIMPL(IplImage*, iplCloneImage, ( const IplImage* img ) )
 
 	if (img->imageData != NULL)
         {
-            switch (img->depth)
+            switch (static_cast<unsigned>(img->depth))
                 {
                 case IPL_DEPTH_8U:
                 case IPL_DEPTH_8S:
@@ -962,7 +962,7 @@ IPLAPIIMPL(void, iplAddS,(IplImage* srcImage, IplImage* dstImage, int value))
 	YARP_ASSERT (srcImage->depth == dstImage->depth);
 
 	// assume images have the same size and 8 bits/pixel/planes.
-	switch (srcImage->depth)
+	switch (static_cast<unsigned>(srcImage->depth))
         {
         case IPL_DEPTH_8U:
             {
@@ -1023,7 +1023,7 @@ IPLAPIIMPL(void, iplAdd,(IplImage* srcImageA, IplImage* srcImageB,
 	YARP_ASSERT (srcImageA->depth == dstImage->depth);
 
 	// assume images have the same size and 8 bits/pixel/planes.
-	switch (srcImageA->depth)
+	switch (static_cast<unsigned>(srcImageA->depth))
         {
         case IPL_DEPTH_8U:
             {
@@ -1094,7 +1094,7 @@ IPLAPIIMPL(void, iplSubtract,(IplImage* srcImageA, IplImage* srcImageB,
 	YARP_ASSERT (compareHeader (srcImageB, dstImage));
 	
 	// assume images have the same size and 8 bits/pixel/planes.
-	switch (srcImageA->depth)
+	switch (static_cast<unsigned>(srcImageA->depth))
         {
         case IPL_DEPTH_8U:
             {
@@ -1164,7 +1164,7 @@ IPLAPIIMPL(void, iplSubtractS,(IplImage* srcImage, IplImage* dstImage, int value
                                bool flip))
 {
 	// assume images have the same size and 8 bits/pixel/planes.
-	switch (srcImage->depth)
+	switch (static_cast<unsigned>(srcImage->depth))
         {
         case IPL_DEPTH_8U:
             {
@@ -1241,7 +1241,7 @@ IPLAPIIMPL(void, iplMultiplySFP,(IplImage* srcImage, IplImage* dstImage,
 
 IPLAPIIMPL(void, iplAbs,(IplImage* srcImage, IplImage* dstImage))
 {
-	switch (srcImage->depth)
+	switch (static_cast<unsigned>(srcImage->depth))
         {
         case IPL_DEPTH_8U:
             {
@@ -1274,7 +1274,7 @@ IPLAPIIMPL(void, iplAbs,(IplImage* srcImage, IplImage* dstImage))
 
 IPLAPIIMPL(void, iplThreshold, (IplImage* srcImage, IplImage* dstImage, int threshold))
 {
-	switch (srcImage->depth)
+	switch (static_cast<unsigned>(srcImage->depth))
         {
         case IPL_DEPTH_8U:
             {

@@ -2443,7 +2443,7 @@ int yarp::os::Run::executeCmdAndStdio(yarp::os::Bottle& msg,yarp::os::Bottle& re
 
                     while(true)
                     {
-                        if (fgets(buff,1024,in_from_child)<=0 || ferror(in_from_child) || feof(in_from_child)) break;
+                        if (fgets(buff,1024,in_from_child)==0 || ferror(in_from_child) || feof(in_from_child)) break;
 
                         out+=yarp::os::ConstString(buff);
                     }
@@ -2614,7 +2614,7 @@ int yarp::os::Run::userStdio(yarp::os::Bottle& msg,yarp::os::Bottle& result)
 
             while(true)
             {
-                if (fgets(buff,1024,in_from_child)<=0 || ferror(in_from_child) || feof(in_from_child)) break;
+                if (fgets(buff,1024,in_from_child)==0 || ferror(in_from_child) || feof(in_from_child)) break;
 
                 out+=yarp::os::ConstString(buff);
             }
@@ -2824,7 +2824,7 @@ int yarp::os::Run::executeCmd(yarp::os::Bottle& msg,yarp::os::Bottle& result)
 
             while(true)
             {
-                if (fgets(buff,1024,in_from_child)<=0 || ferror(in_from_child) || feof(in_from_child)) break;
+                if (fgets(buff,1024,in_from_child)==0 || ferror(in_from_child) || feof(in_from_child)) break;
 
                 out+=yarp::os::ConstString(buff);
             }

@@ -915,8 +915,8 @@ public:
             return getHomeContextPath(config, context);
         }
     }
-};
 #endif // YARP_NO_DEPRECATED
+};
 
 #define HELPER(x) (*((ResourceFinderHelper*)(x)))
 
